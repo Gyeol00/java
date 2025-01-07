@@ -8,5 +8,8 @@ public class practiceTest {
 		sonata.speedUp(50);
 		sonata.speedDown(30);
 		sonata.show();
+		
+		sonata.setColor("흰색");
+		sonata.show();
 	}
 }

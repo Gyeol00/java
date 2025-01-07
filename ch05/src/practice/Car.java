@@ -26,6 +26,11 @@ public class Car {
 		System.out.println("차량 속도 : " + speed);
 	}
 	
-	
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
 	
 }
