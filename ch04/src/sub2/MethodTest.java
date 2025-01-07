@@ -19,7 +19,7 @@ public class MethodTest {
 		System.out.println("y3 : " + y3);
 		
 		// 지역변수와 메서드
-		int t1 = sum(1, 10);
+		int t1 = sum(1, 10); // (1, 10) 1부터 10까지라는 말
 		int t2 = sum(1, 100);
 		
 		System.out.println("t1 : " + t1);
@@ -33,7 +33,7 @@ public class MethodTest {
 	}
 	
 	public static int fx(int x) { // main 메서드에서 호출해야하기 때문에 main과 같이 static 키워드 맞춰줌
-		                          // 접근권한, 반환타입, 메서드명(매개변수)
+                                  // 접근권한, 반환타입, 메서드명(매개변수)
 		int y = 2 * x + 3;
 		
 		return y; // 반환값

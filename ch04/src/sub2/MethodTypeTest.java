@@ -32,10 +32,10 @@ public class MethodTypeTest {
 		
 	}
 	
-	// 타입2 : 매개변수 O, 반환값 X(void)
+	// 타입2 : 매개변수 O, 반환값 X. 반환값이 없으면 void로 정의.
 	public static void type2(boolean status) {
 		
-		if(status) {
+		if(status) { // status 주로 어떤 상태나 조건에 사용됨.
 			System.out.println("참 입니다.");
 		}else {
 			System.out.println("거짓 입니다.");

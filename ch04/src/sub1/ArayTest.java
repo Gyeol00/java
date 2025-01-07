@@ -36,8 +36,8 @@ public class ArayTest {
 			System.out.print(arr1[i] + " "); // 개행
 		}
 		
-		for(char c : arr2) {
-			System.out.print(c + " "); // 배열의 길이만큼 반복하면서 배열 원소를 변수 c에 대입
+		for(char alphabet : arr2) {
+			System.out.print(alphabet + " "); // 배열의 길이만큼 반복하면서 배열 원소를 변수 c에 대입
 		}
 		
 		for(String city : arr3) {
@@ -49,9 +49,25 @@ public class ArayTest {
 		int total = 0;
 		
 		for(int score : scores) {
-			total += score;			
+			total += score;	// total = total + score		
 		}
 		System.out.println("scores 합 : " + total);
+		
+		int[] numbers = {53, 62, 70};
+		int total1 = 0;
+		
+		for (int number : numbers) {
+			total1 += number;
+		}
+		System.out.println("numbers 합 : " + total1);
+		
+		int[] nums = {22, 22, 22};
+		int total3 = 0;
+		
+		for(int num : nums) {
+			total3 += num;
+		}
+		System.out.println("nums의 합 : " + total3);
 		
 		// 2차원 배열
 		int[][] arr2d = {{1,  2,  3,  4},
