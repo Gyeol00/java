@@ -12,4 +12,11 @@ public class practiceTest {
 		sonata.setColor("흰색");
 		sonata.show();
 	}
-}
+	
+	//public static void main(String[] args) {
+		//Book B1 = new Book("한밤의 이야기", "김소영", 0);
+		
+		
+	}
+	
+//}
