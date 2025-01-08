@@ -11,12 +11,17 @@ public class practiceTest {
 		
 		sonata.setColor("흰색");
 		sonata.show();
-	}
-	
-	//public static void main(String[] args) {
-		//Book B1 = new Book("한밤의 이야기", "김소영", 0);
 		
+		Book B1 = new Book("자바의 정석", "남궁성", 0);
 		
+		B1.increasePrice(5000);
+		B1.show();
+		
+		Book B2 = new Book("안녕", "허허", 0);
+		
+		B2.increasePrice(10000);
+		B2.show();
+		
+		// 가격 비교 만들어보기
 	}
-	
-//}
+}
