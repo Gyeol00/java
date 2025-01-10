@@ -4,15 +4,16 @@ class King {
 	private String name;
 	private int year;
 	
-	public king(String name, int year) {
+	public King(int year) {
 		this("정조");
 		this.year = year;
 	}
-	
-	public king(String name) {
+
+	public King(String name) {
 		this.name = name;
+		//this.year = 0;
 	}
-	public void() {
+	public King(String name, int year) {
 		this.name = name;
 		this.year = year;
 	}
@@ -20,6 +21,7 @@ class King {
 		System.out.println("name : " + name);
 		System.out.println("year : " + year);
 	}
+}
 
 public class Test02 {
 
@@ -33,4 +35,5 @@ public class Test02 {
 		k3.show();
 	}
 			
+	
 }
