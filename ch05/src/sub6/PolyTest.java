@@ -91,7 +91,17 @@ public class PolyTest {
 		arr[1].hunt();
 		arr[2].hunt();
 		
+		//다형성 확인 문제
+		Pet dog = new Dog();
+		Pet cat = new Cat();
 		
-	
+		printSound(dog);
+		printSound(cat);
+		
 	}
+	
+	public static void printSound(Pet pet) {// 다형성이 적용된 메서드 매개변수
+		pet.makeSound();
+	}
+			
 }
