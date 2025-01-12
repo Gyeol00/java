@@ -22,14 +22,25 @@ class CarFactory {
 	private static CarFactory instance = new CarFactory();
 	private CarFactory() {}
 	
-	public static name() {
-		
+	public static CarFactory getInstance() {
+		return instance;
+	}
+	public Vehicle createCar(String name, int price) {
+		return new Vehicle(name, price);
 	}
 }
 
 public class Test05 {
 
 	public static void main(String[] args) {
+		
+		CarFactory factory = new CarFactory();
+		
+		Vehicle avante = factory.createCar("아반테", 2500);
+		Vehicle sonata = factory.createCar("소나타", 3000);
+		
+		avante.info();
+		sonata.info();
 		
 	}
 }
