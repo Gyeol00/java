@@ -15,6 +15,8 @@ public class Apple{
 		return "Apple [country=" + country + ", price=" + price + "]";
 	}
 	
-	
+	public void show() {
+        System.out.println(country + " : " + price);
+    }
 	
 }
