@@ -1,6 +1,6 @@
 package test3;
 
-static class Shape{
+abstract class Shape{
 	public abstract void draw();
 }
 
@@ -28,9 +28,12 @@ public class Test09 {
 		Circle circle = new Circle();
 		Triangle triangle = new Triangle();
 		
+		here.draw(circle);
+		here.draw(triangle);
+		
 	}
 	
-	public void draw(String obj) {
+	public void draw(Shape obj) {
 		obj.draw();
 	}
 }

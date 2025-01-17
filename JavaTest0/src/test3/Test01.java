@@ -1,5 +1,8 @@
 package test3;
 
+/* 날짜 : 2025/01/10
+ * 
+ */
 public class Test01 {
 
 	private String name;

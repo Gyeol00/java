@@ -1,5 +1,12 @@
 package sub4;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import sub1.Apple;
+
 /*
  * 날짜 : 2025/01/14
  * 이름 : 한결
@@ -67,6 +74,8 @@ public class WrapperTest {
 		System.out.println("v1 : " + v1);
 		System.out.println("v2 : " + v2);
 		System.out.println("v3 : " + v3);
+		
+		
 		
 		
 	}

@@ -102,11 +102,6 @@ public class ListTest {
 		cities.addFirst("인천");
 		cities.addLast("울산");
 		System.out.println(cities);
-		
-		
-		
-		
-		
-		
+			
 	}
 }

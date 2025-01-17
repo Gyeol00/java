@@ -36,9 +36,8 @@ class VipCustomer extends Customer{
 	
 	private double saleRatio;
 
-	public VipCustomer(int id, String name, double saleRatio) {
-		this.id = id;
-		this.name = name;
+	public VipCustomer(int id, String name) {
+		super(id, name);
 		super.grade = "VIP";
 		super.point = 1000;
 		super.pointRatio = 0.05;

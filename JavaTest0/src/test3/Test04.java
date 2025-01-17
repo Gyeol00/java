@@ -1,18 +1,19 @@
 package test3;
 
 class Student {
-	private static int studentId;
+	public static int studentId; // 동적 변수라서 public static 선언
 	private String studentName;
 	private String major;
 	private int grade;
 	
-	public Student(int studentId, String studentName, String major, int grade) {
+	public Student(String studentName, String major, int grade) {
 		this.studentId++;
 		this.studentName = studentName;
 		this.major = major;
 		this.grade = grade;	
 	}
 	
+
 	public void studentInfo() {
 		System.out.println("==================");
 		System.out.println("학번 : + " + studentId);
@@ -29,13 +30,13 @@ public class Test04 {
 		
 		Student.studentId = 20201000;
 		
-		Student kim = new Student(20201000, "김유신", "국문과", 1);
+		Student kim = new Student("김유신", "국문과", 1);
 		kim.studentInfo();
 		
-		Student lee = new Student(20201000, "이순신", "경제학과", 1);
+		Student lee = new Student("이순신", "경제학과", 1);
 		lee.studentInfo();
 		
-		Student lim = new Student(20201000, "임꺽정", "경영학과", 1);
+		Student lim = new Student("임꺽정", "경영학과", 1);
 		lim.studentInfo();
 		
 		

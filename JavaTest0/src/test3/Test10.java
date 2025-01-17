@@ -27,8 +27,8 @@ public class Test10 {
 
 	public static void main(String[] args) {
 		
-		Buyer buyer = new Buyer();
-		Seller seller = new Seller(sell);
+		Buyer buyer = new Customers();
+		Seller seller = new Customers();
 		
 		buyer.buy();
 		seller.sell();

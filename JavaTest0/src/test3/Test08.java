@@ -9,7 +9,7 @@ class Product{
 		this.category = category;
 		this.price = price;
 	}
-	public void info(String category, int price) {
+	public void info() {
 		
 	}
 }
@@ -21,7 +21,7 @@ class Television extends Product {
 	}
 	
 	@Override
-	public void info(String category, int price) {
+	public void info() {
 		System.out.println("제품분류 : " + category);
 		System.out.println("제품가격 : " + price);
 	}
@@ -34,7 +34,7 @@ class Computer extends Product {
 	}
 	
 	@Override
-	public void info(String category, int price) {
+	public void info() {
 		System.out.println("제품분류 : " + category);
 		System.out.println("제품가격 : " + price);
 	}
@@ -47,9 +47,10 @@ public class Test08 {
 		Product p1 = new Television("가전", 100);
 		Product p2 = new Computer("컴퓨터", 150);
 		
-		p1.info("가전", 100);
-		p2.info("컴퓨터", 150);
+		p1.info();
+		p2.info();
 		
+	
 	}
 }
 
