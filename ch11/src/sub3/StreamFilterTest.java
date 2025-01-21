@@ -1,7 +1,7 @@
 package sub3;
 
 import java.util.Arrays;
-import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 /* 날짜 : 2025/01/21
@@ -39,10 +39,8 @@ public class StreamFilterTest {
 			.stream()
 			.distinct()
 			.filter(num -> num % 2 == 0)
-			.sorted(Collection.reverseOrder())
+			.sorted(Collections.reverseOrder())
 			.forEach(num -> System.out.print(num + ", "));
-			
-		
-		
+
 	}
 }

@@ -52,7 +52,37 @@ public class LambdaPt {
 		B b1 = (double a) -> {
 			System.out.println("a : " + a);
 		};
-	}
+		
+		B b2 = a -> System.out.println("a : " + a);
+		
+		B b3 = System.out::println;
+		
+		b1.method(1.0);
+		b2.method(2.0);
+		b3.method(3.0);
+		
+		C c1 = () -> {
+			return true;
+		};
+		
+		C c2 = () -> false;
+		
+		boolean res1 = c1.method();
+		boolean res2 = c2.method();
+		
+		System.out.println("res1 : " + res1);
+		System.out.println("res2 : " + res2);
+		
+		D d1 = () -> {
+			System.out.println("d1 호출...");
+		};
+		
+		D d2 = () -> System.out.println("d2 호출...");
+		
+		d1.method();
+		d2.method();
+		
+ 	}
 }
 
 

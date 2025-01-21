@@ -1,8 +1,6 @@
 package sub4;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -79,10 +77,10 @@ public class StreamMapTest {
 					Arrays.asList("Cherry", "Grape"),
 					Arrays.asList("Orange", "Mango"));
 		
-		List<String> fruitList = fruits
-									.stream()
-									.flatMap(null)
-									.collect(null);
+	//	List<String> fruitList = fruits
+	//								.stream()
+	//								.flatMap(null)
+	//								.collect(null);
 		
 		List<String> fruitList = fruits
 									.stream()
