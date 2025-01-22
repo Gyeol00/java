@@ -28,7 +28,7 @@ public class FileReaderTest {
 			// 스트림 데이터 전송
 			while(true) {
 				
-				// 입력 스트림으로 파일 데이터 읽기
+				// 입력 스트림으로 파일 문자 데이터 읽기
 				int data = fr.read();
 				
 				if(data == -1) {
@@ -40,7 +40,7 @@ public class FileReaderTest {
 				char ch = (char) data;
 				System.out.print(ch);
 				
-				// 출력 스트림으로 파일 데이터 쓰기
+				// 출력 스트림으로 파일 문자 데이터 쓰기
 				fw.write(data);					
 			}
 			
