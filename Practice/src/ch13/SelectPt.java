@@ -13,7 +13,7 @@ class User1 {
 	private String hp;
 	private int age;
 	
-	public User1() {}
+	public User1 () {}
 	
 	public User1(String uid, String name, String hp, int age) {
 		this.uid = uid;
@@ -28,7 +28,7 @@ class User1 {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
+
 	public String getHp() {
 		return hp;
 	}
@@ -56,17 +56,16 @@ class User1 {
 	}
 	
 	
-	
 }
 
 public class SelectPt {
 	public static void main(String[] args) {
-		
+		// DB 생성
 		String host = "jdbc:mysql://127.0.0.1/studydb";
 		String user = "root";
 		String pass = "1234";
 		
-		List<User1> users = new ArrayList<>();
+		List<User1> users = new ArrayList<User1>();
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -75,7 +74,7 @@ public class SelectPt {
 			
 			Statement stmt = conn.createStatement();
 			
-			String sql = "select * from `user1`";
+			String sql = "select * from `user1` ";
 			ResultSet rs = stmt.executeQuery(sql);
 			
 			while(rs.next()) {
@@ -91,18 +90,20 @@ public class SelectPt {
 				user1.setAge(age);
 				
 				users.add(user1);
-				
-				System.out.println(users);
-			}
+
+			}		
 			
-			rs.close();
-			stmt.close();
 			conn.close();
+			stmt.close();
+			rs.close();
+			
 			
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		System.out.println("select 완료...");
+		for(User1 user1 : users) {
+			System.out.println(user1);
+		}
 	}
 }
