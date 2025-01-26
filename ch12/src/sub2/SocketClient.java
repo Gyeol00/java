@@ -46,6 +46,7 @@ public class SocketClient {
 			// 전송 완료 후, OutputStream을 비워준다
 			os.flush();
 			System.out.println("데이터 송신 완료...");
+		
 
 			// 데이터 수신 단계
 			InputStream is = socket.getInputStream();
