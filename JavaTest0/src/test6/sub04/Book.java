@@ -16,16 +16,18 @@ public class Book {
 	
 	public void borrowBook() {
 		if(!isBorrowd) {
-			System.out.println("가능");
-		}else if(false) {
-			System.out.println("불가능");
+			isBorrowd = true;
+			System.out.println("도서대출 : " + title);
 		}else {
 			System.out.println(title + " 이미 대출됨");
 		}
 	}
 	
 	public void returnBook() {
-		
+		if(isBorrowd) {
+			isBorrowd = false;
+			System.out.println("도서반납 : " + title);
+		}
 	}
 	
 	public void getBookInfo() {
