@@ -1,13 +1,10 @@
 package test6.sub05;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Subject {
 
-	private String subName;
-	private Student[] students;
-	private int studentCount;
+	private String subName; // 과목 이름
+	private Student[] students; // 과목을 수강하는 학생 배열
+	private int studentCount; // 현재 수강 중인 학생 수
 	
 	public Subject(String subName) {
 		this.subName = subName;
@@ -16,13 +13,16 @@ public class Subject {
 	}
 	
 	public void addStudent(Student student) {
-		List<Subject> subject = new ArrayList<>();
-		subject.add(java);
+		students[studentCount++] = student;
 	}
 	
 	public void printSubjectInfo() {
 		System.out.println("과목명 : " + subName);
-		System.out.println("수강생 : " + students);
+		System.out.print("수강생 : ");
+		
+		for(int i=0; i < studentCount; i++) {
+			System.out.println(students[i].getName() + ", ");
+		}
 	}
 	
 	public String getSubName() {

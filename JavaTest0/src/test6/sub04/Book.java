@@ -1,12 +1,11 @@
 package test6.sub04;
 
 public class Book {
-	
 	private String title;
 	private String author;
 	private String isbn;
 	private boolean isBorrowd;
-	
+
 	public Book(String title, String author, String isbn) {
 		this.title = title;
 		this.author = author;
@@ -17,7 +16,7 @@ public class Book {
 	public void borrowBook() {
 		if(!isBorrowd) {
 			isBorrowd = true;
-			System.out.println("도서대출 : " + title);
+			System.out.println("대출한 도서 : " + title);
 		}else {
 			System.out.println(title + " 이미 대출됨");
 		}
@@ -27,6 +26,8 @@ public class Book {
 		if(isBorrowd) {
 			isBorrowd = false;
 			System.out.println("도서반납 : " + title);
+		}else {
+			System.out.println(title + "이미 대출됨");
 		}
 	}
 	
