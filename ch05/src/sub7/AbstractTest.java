@@ -8,7 +8,7 @@ package sub7;
 public class AbstractTest {
 	public static void main(String[] args) {
 		
-		// 추상클래스는 객체 생성X
+		// 추상클래스는 직접 객체 생성X
 		//Animal animal = new Animal();
 		
 		Animal a1 = new Tiger();
