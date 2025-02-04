@@ -37,6 +37,32 @@ class Calculator {
 	}
 }
 
+class Student {
+	// 인스턴스 변수 : 각 학생 객체마다 고유한 값
+	String name;
+	String studentId;
+	
+	// static 변수 : 전체 학생 수는 모든 학생들이 공유하는 값
+	static int totalStudents = 0;
+	
+	// 생성자 : 학생을 만들 때 이름과 학번을 초기화하고, 전체 학생 수를 증가시킨다.
+	public Student(String name, String studentId) {
+		this.name = name;
+		this.studentId = studentId;
+		totalStudents++; // 새로운 학생이 추가될 때마다 전체 학생 수 증가
+	}
+	
+	// 인스턴스 메서드 : 학생 정보를 출력
+	public void showInfo() {
+		System.out.println("학생 이름 : " + name + ", 학번 : " + studentId);
+	}
+	
+	// static 메서드 : 전체 학생 수 출력 (클래스 이름으로 호출 가능)
+	public static void showTotalStudents() {
+		System.out.println("전체 학생 수 : " + totalStudents);
+	}
+}
+
 public class StaticPt {
 	public static void main(String[] args) {
 		// 객체 3개 생성
