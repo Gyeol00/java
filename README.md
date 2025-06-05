@@ -1,11 +1,12 @@
-# java
+# java Repository
+
 ## 목차
 - [개요](#개요)
 - [사용 기술](#사용-기술)
 - [기술 퍼센트](#기술-퍼센트)
 - [프로젝트 소개](#프로젝트-소개)
 
-<br><br>
+<br>
 
 ## 개요
 - 개발자명 : Gyeol00 (한결)
@@ -13,7 +14,7 @@
 - 주요 프로젝트 : BankProject, ShopProject, CodingTest 등
 - 깃허브 활동 기간 : 2023년 ~ 현재
 
-<br><br>
+<br>
 
 ## 사용 기술
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -22,12 +23,12 @@
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 
-<br><br>
+<br>
 
 ## 기술 퍼센트
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Gyeol00&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
-<br><br>
+<br>
 
 ## 프로젝트 소개
 
