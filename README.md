@@ -14,6 +14,6 @@
 
 🛒 ShopProject — 쇼핑몰 기능 구현 프로젝트
 
-📚 ThisJava — 자바 공부용 자료 모음
+📚 ThisJava — 자바 연습
 
 📖 ch01 ~ ch14 — 자바 강의별 챕터 정리
