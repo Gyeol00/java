@@ -1,19 +1,28 @@
 # java Repository 소개
 
-💰 BankProject — 은행 시스템 기능 연습
+#### ch01 ~ ch14 
+- 자바 강의별 챕터 정리
 
-🔄 CRUDTest — 데이터 생성·조회·수정·삭제 실습
+#### BankProject
+- 은행 시스템 기능 연습
 
-🧩 CodingTest — 각종 코딩 테스트 문제 풀이
+#### CRUDTest
+- 데이터 생성·조회·수정·삭제 실습
 
-☕️ JavaTest0 / JavaTestPractice — 자바 기본기 다지기
+#### CodingTest 
+- 각종 코딩 테스트 문제 풀이
 
-⚡️ PerformTest — 성능 테스트 및 최적화 실험
+#### JavaTest0 / JavaTestPractice 
+- 자바 기본기 다지기
 
-🛠 Practice — 자바와 기타 개발 연습 코드 모음
+#### PerformTest 
+- 성능 테스트 및 최적화 실험
 
-🛒 ShopProject — 쇼핑몰 기능 구현 프로젝트
+#### Practice 
+- 자바와 기타 개발 연습 코드 모음
 
-📚 ThisJava — 자바 연습
+#### ShopProject 
+- 쇼핑몰 기능 구현 프로젝트
 
-📖 ch01 ~ ch14 — 자바 강의별 챕터 정리
+#### ThisJava 
+- 자바 연습
